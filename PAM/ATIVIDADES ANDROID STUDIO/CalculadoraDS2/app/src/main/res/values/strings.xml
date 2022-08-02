@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CalculadoraDS2</string>
+
+    <string-array name="Opções">
+        <item> Nenhum </item>
+        <item> Somar </item>
+        <item> Subtrair </item>
+        <item> Multiplicar </item>
+        <item> Dividir </item>
+    </string-array>
+</resources>

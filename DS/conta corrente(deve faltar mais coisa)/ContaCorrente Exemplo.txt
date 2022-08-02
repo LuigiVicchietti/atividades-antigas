@@ -1,0 +1,40 @@
+import javax.swing.JOptionPane;
+
+public class ContaCorrente {
+	
+	//Atributos -- Caracteristicas//
+		public int numagencia;
+		public String nomebanco;
+		public int numconta;
+		
+		
+		
+		//Métodos - > Comportamento -- ações//
+		
+		
+		//Metodo com parametro //
+		    public void cadastrarConta(int nag,String nb,int nconta){
+
+			   this.numagencia = nag;
+			   this.nomebanco = nb;
+			   this.numconta = nconta;
+
+			 JOptionPane.showMessageDialog(null,"Dados Cadastrados com sucesso!");
+
+
+			}
+		    
+		    
+		     public String exibirConta() {
+		    	 
+		    	 String info = "'O numero da agencia é:'"+this.numagencia +
+		    			       "\n O nome do banco é:"+this.nomebanco +
+		    			       "\n O numero da conta é:"+this.numconta;
+		    	 
+		    	  return info ;
+		    	 
+		    	 
+		     }   
+	
+
+}

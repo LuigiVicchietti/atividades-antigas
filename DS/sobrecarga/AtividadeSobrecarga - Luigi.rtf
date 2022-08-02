@@ -1,0 +1,177 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red106\green62\blue62;\red42\green0\blue255;\red240\green216\blue168;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs28\lang22\par
+\par
+ETEC de Guaianazes\par
+\par
+\par
+\par
+\par
+Atividade Sobrecarga de M\'e9todos\par
+\ul\b0\i Sal\'e1rio\b\i0\par
+\ulnone\par
+\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\qr\b0\i\fs18 Esta atividade foi feita para \par
+os professores Carlos e Rosangela \par
+da mat\'e9ria de DS.\par
+
+\pard\sa200\sl276\slmult1\qc\b\i0\fs28\par
+\par
+\par
+\b0\fs24 S\'e3o Paulo\i\fs28\par
+\i0\fs24 Dia 31 de maio de 2021\par
+\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\i Nome: Luigi Vicchietti.    N\'famero: 29\par
+\fs28 //-----------------------------------------------------------------------------------------/\par
+\par
+Classe Principal:\par
+\cf1\b\i0\f1\fs20 import\cf2\b0  javax.swing.JOptionPane;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Principal \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 cliente\cf2 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 trabalho\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab Principal() \{\cf0\par
+\cf2\tab\tab\cf1\ul\b this\cf2\b0 .\cf3 cliente\cf2  = \cf3 cliente\cf2\ulnone ;\cf0\par
+\cf2\tab\tab\cf1\ul\b this\cf2\b0 .\cf3 trabalho\cf2  = \cf3 trabalho\cf2\ulnone ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getcliente() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 cliente\cf2 ; \cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setcliente(String \cf4 cliente\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 cliente\cf2  = \cf4 cliente\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String gettrabalho() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 trabalho\cf2 ; \cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  settrabalho(String \cf4 trabalho\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 trabalho\cf2  = \cf4 trabalho\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf4 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf4 Salario1\cf2 , \cf4 reajuste\cf2 , \cf4 total1\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b double\cf2\b0  \cf4 Salario2\cf2 , \cf4 REAJUSTE\cf2 , \cf4 total2\cf2 , \cf4 inss\cf2 , \cf4 total3\cf2 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf4 Option\cf2  = 1;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab Principal \cf4 p\cf2  = \cf1\b new\cf2\b0  Principal ();\cf0\par
+\cf2\tab\tab Salario \cf4 s\cf2  = \cf1\b new\cf2\b0  Salario();\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b do\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Atividade Sobrecarga de M\f2\'e9todos"\cf2\f1 );\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab String \cf4 msg\cf2  = \cf5 "1 - Inserir Inforama\f2\'e7\'f5es "\cf2\f1 +\cf0\par
+\cf2\tab\tab\tab\cf5 "\\n2 - Exibir Informa\f2\'e7\'f5es "\cf2\f1 + \cf5 "\\n3 - Descobrir Sal\f2\'e1rio reajustado "\cf2\f1  +\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf5 "\\n4 - Descobrir Sal\f2\'e1rio final "\cf2\f1  + \cf5 "\\n0 - Sair"\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf4 Option\cf2  = Integer.\i parseInt\i0 (JOptionPane.\i showInputDialog\i0 (\cf4 msg\cf2 ));\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b switch\cf2\b0  (\cf4 Option\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  1:\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf4 p\cf2 .setcliente(JOptionPane.\i showInputDialog\i0 (\cf5 "Digite o nome do cliente:"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\cf4 p\cf2 .settrabalho(JOptionPane.\i showInputDialog\i0 (\cf5 "Digite do que o cliente trabalha:"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  2:\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Informa\f2\'e7\'f5es: \\nCliente: "\cf2\f1  + \cf4 p\cf2 .getcliente() +\cf0\par
+\cf2\tab\tab\tab\tab\cf5 "\\nTrabalho: "\cf2  + \cf4 p\cf2 .gettrabalho());\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  3: \cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf4 Salario1\cf2  = Integer.\i parseInt\i0 (JOptionPane.\i showInputDialog\i0 (\cf5 "Digite o sal\f2\'e1rio do cliente: "\cf2\f1 ));\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0  (\cf4 Salario1\cf2  >= 1500) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf4 reajuste\cf2  = 5;\cf0\par
+\cf2\tab\tab\tab\} \cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab\tab\cf4 reajuste\cf2  = 10;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "O reajuste \f2\'e9 de: "\cf2\f1  + \cf4 reajuste\cf2  + \cf5 " , logo, ser\f2\'e1 de "\cf2\f1  + \cf4 Salario1\cf2  * \cf4 reajuste\cf2  / 100);\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf4 total1\cf2  = \cf4 Salario1\cf2  + \cf4 Salario1\cf2  * \cf4 reajuste\cf2  / 100;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf5 "O sal\f2\'e1rio com reajuste \'e9 de "\cf2\f1  + \cf4 s\cf2 .Salario(\cf4 Salario1\cf2 , \cf4 reajuste\cf2 , \cf4 total1\cf2 ));\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  4: \cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf4 Salario2\cf2  = Integer.\i parseInt\i0 (JOptionPane.\i showInputDialog\i0 (\cf5 "Digite o sal\f2\'e1rio do cliente: "\cf2\f1 ));\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0  (\cf4 Salario2\cf2  >= 1500) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 REAJUSTE\cf2  = 5;\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 inss\cf2  = 10;\cf0\par
+\cf2\tab\tab\tab\tab\} \cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 REAJUSTE\cf2  = 10;\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 inss\cf2  = 6;\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf4 total2\cf2  = \cf4 Salario2\cf2  + \cf4 Salario2\cf2  * \cf4 REAJUSTE\cf2  / 100;\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "O inss \f2\'e9 de: "\cf2\f1  + \cf4 inss\cf2  + \cf5 " , logo, o inss \f2\'e9 de: "\cf2\f1  + \cf4 Salario2\cf2  * \cf4 inss\cf2  / 100);\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf4 total3\cf2  = \cf4 total2\cf2  - \cf4 Salario2\cf2  * \cf4 inss\cf2  / 100 ;\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf5 "O sal\f2\'e1rio final \'e9 de "\cf2\f1  + \cf4 s\cf2 .Salario(\cf4 Salario2\cf2 , \cf4 REAJUSTE\cf2 , \cf4 total2\cf2 , \cf4 inss\cf2 , \cf4 total3\cf2 ));\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  0:\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "At\f2\'e9!"\cf2\f1 );\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b default\cf2\b0 :\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Op\f2\'e7\'e3o Invalida!"\cf2\f1 );\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\} \cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b while\cf2\b0  (\cf4 Option\cf2 !=0);\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\}\cf0\par
+\f0\fs22\par
+\i\fs28 - Classe Salario:\par
+\cf1\b\i0\f1\fs20 public\cf2\b0  \cf1\b class\cf2\b0  Salario \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  \ul Salario (\cf1\b int\cf2\b0  \cf4 Salario1\cf2 , \cf1\b int\cf2\b0  \cf4 reajuste\cf2 , \cf1\b int\cf2\b0  \cf4 total1\cf2 )\ulnone\{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\cf1\b return\cf2\b0  \cf4 total1\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  \ul Salario (\cf1\b double\cf2\b0  \cf4 Salario2\cf2 , \cf1\b double\cf2\b0  \cf4 REAJUSTE\cf2 , \cf1\b double\cf2\b0  \cf4\highlight6 total2\cf2\highlight0 , \cf1\b double\cf2\b0  \cf4 inss\cf2 , \cf1\b double\cf2\b0  \cf4 total3\cf2 )\ulnone  \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\cf1\b return\cf2\b0  \cf4 total3\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\fs22\par
+}
+ 

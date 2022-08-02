@@ -1,0 +1,64 @@
+public class ContaCorrente{
+
+public int numagencia;
+public String nomebanco;
+public int numconta;
+public double saldo;
+
+
+}
+
+public void CadastrarConta(int nag,String nb,int nconta){
+
+   this.numagencia = nag;
+   this.nomebanco = nb;
+   this.numconta = nconta;
+
+ JOptionPane.showMessageDialog(null,"Dados Cadastrados com sucesso!");
+
+
+}
+
+
+ public String exibirConta()
+{
+
+
+      String msg="O numero da agencia é : "+this.numagencia"+
+                                  "\n O nome do banco é :"+this.nomebanco +
+                                  "\n Numero da conta : "+this.numconta );
+
+       
+          return msg;
+
+
+}
+
+  public void sacar (double  valor )
+  {
+       if(this.saldo>=valor)
+         {
+           this.saldo= this.saldo-valor;
+
+       JOptionPane.showMessageDialog("Saque realizado com sucesso!");
+   }
+       else{
+
+     JOptionPane.showMessageDialog("Saldo insuficiente!!");
+      }
+  
+ }
+
+ public void depositar (double depositar)
+   {
+    this.saldo= this.saldo + valor;
+
+   JOptionPane.showMessageDialog("Deposito realizado com sucesso!");
+ }
+
+ public  double saldo()
+ {
+
+     return this.saldo;
+
+ } 

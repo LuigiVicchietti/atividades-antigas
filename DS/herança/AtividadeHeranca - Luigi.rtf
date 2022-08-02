@@ -1,0 +1,279 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red106\green62\blue62;\red42\green0\blue255;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs28\lang22\par
+\par
+ETEC de Guaianazes\par
+\par
+\par
+\par
+\par
+\par
+Atividade Heran\'e7a\par
+Heran\'e7a de Veiculos\par
+\par
+\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\qr\b0\i\fs18 Esta atividade foi  feita para\par
+os professores Carlos e \par
+Rosangela da mat\'e9ria de DS.\par
+
+\pard\sa200\sl276\slmult1\qc\par
+\par
+\b\i0\fs24 S\'e3o Paulo\par
+\b0\fs22 Dia 31 de maio de 2021\par
+\par
+\par
+\par
+Nome: Luigi Vicchietti.  N\'famero: 29\par
+//-----------------------------------------------------------------------------------------//\par
+\par
+
+\pard\sa200\sl276\slmult1\b\i Principal.java\b0\i0 )\par
+\cf1\b\f1\fs20 import\cf2\b0  javax.swing.JOptionPane;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Principal \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 cor\cf2 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 modelo\cf2 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3\ul locomover\cf2\ulnone ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3\ul freio\cf2\ulnone ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main (String[] \cf4 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab Principal \cf4 p1\cf2  = \cf1\b new\cf2\b0  Principal();\cf0\par
+\cf2\tab\tab Carro \cf4 car1\cf2  = \cf1\b new\cf2\b0  Carro();\cf0\par
+\cf2\tab\tab Moto \cf4 moto1\cf2  = \cf1\b new\cf2\b0  Moto();\cf0\par
+\cf2\tab\tab Bike \cf4 bike1\cf2  = \cf1\b new\cf2\b0  Bike();\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf4 Option\cf2  = 1;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf4 Option2\cf2  = 0;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b do\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab String \cf4 msg\cf2  = \cf5 "ATIVIDADE HERAN\f2\'c7A! "\cf2\f1  + \cf5 "\\n"\cf2  + \cf5 "\\n1 - Cadastrar Veiculo "\cf2 +\cf0\par
+\cf2\tab\tab\tab\cf5 "\\n2 - Exibir informa\f2\'e7\'f5es "\cf2\f1 + \cf5 "\\n3 - Fun\f2\'e7\'f5es do veiculo"\cf2\f1  + \cf5 "\\n0 - Sair"\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf4 Option\cf2  = Integer.\i parseInt\i0 (JOptionPane.\i showInputDialog\i0 (\cf4 msg\cf2 ));\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b switch\cf2\b0  (\cf4 Option\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  1:\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab String \cf4 msg2\cf2  = \cf5 "Qual veiculo voc\f2\'ea ir\'e1 usar?"\cf2\f1  + \cf5 "\\n1 - Carro"\cf2  +\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab  \cf5 "\\n2 - Moto"\cf2  + \cf5 "\\n3 - Bike"\cf2 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf4 Option2\cf2  = Integer.\i parseInt\i0 (JOptionPane.\i showInputDialog\i0 (\cf4 msg2\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b switch\cf2\b0  (\cf4 Option2\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b case\cf2\b0  1:\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Veiculo escolhido: Carro"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b case\cf2\b0  2:\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Veiculo escolhido: Moto"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b case\cf2\b0  3:\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Veiculo escolhido: Bike"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 1) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 p1\cf2 .setcor(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual a cor do veiculo?"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 p1\cf2 .setmodelo(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual a marca do veiculo?"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 car1\cf2 .setaroRoda(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual o tipo de aro da roda?"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 car1\cf2 .setAerofolio(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual o tipo de aerof\f2\'f3lio?"\cf2\f1 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Cadastro feito com sucesso"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 2) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 p1\cf2 .setcor(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual a cor do veiculo?"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 p1\cf2 .setmodelo(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual a marca do veiculo?"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 moto1\cf2 .setbarraSegura\f2\'e7a(JOptionPane.\i\f1 showInputDialog\i0 (\cf5 "Qual o tipo de barra de seguran\f2\'e7a?"\cf2\f1 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Cadastro feito com sucesso"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 3) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 p1\cf2 .setcor(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual a cor do veiculo?"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 p1\cf2 .setmodelo(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual a marca do veiculo?"\cf2 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf4 bike1\cf2 .setGuidao(JOptionPane.\i showInputDialog\i0 (\cf5 "Qual o tipo de guid\f2\'e3o da bike?"\cf2\f1 ));\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Cadastro feito com sucesso"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Digite o numero entre as op\f2\'e7\'f5es..."\cf2\f1 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  2:\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 1) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Informa\f2\'e7\'f5es do veiculo"\cf2\f1  + \cf5 "\\nVeiculo: Carro"\cf2  + \cf5 "\\nCor: "\cf2  + \cf4 p1\cf2 .getcor() + \cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf5 "\\nModelo: "\cf2  + \cf4 p1\cf2 .getmodelo() + \cf5 "\\nAro da roda: "\cf2  + \cf4 car1\cf2 .getaroRoda() + \cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf5 "\\nAerof\f2\'f3lio: "\cf2\f1  + \cf4 car1\cf2 .getAerofolio());\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 2) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Informa\f2\'e7\'f5es do veiculo"\cf2\f1  + \cf5 "\\nVeiculo: Moto"\cf2  + \cf5 "\\nCor: "\cf2  + \cf4 p1\cf2 .getcor() + \cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf5 "\\nModelo: "\cf2  + \cf4 p1\cf2 .getmodelo() + \cf5 "\\nBarra de seguran\f2\'e7a: "\cf2\f1  + \cf4 moto1\cf2 .getbarraSeguran\f2\'e7a());\cf0\f1\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 3) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Informa\f2\'e7\'f5es do veiculo"\cf2\f1  + \cf5 "\\nVeiculo: Moto"\cf2  + \cf5 "\\nCor: "\cf2  + \cf4 p1\cf2 .getcor() + \cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf5 "\\nModelo: "\cf2  + \cf4 p1\cf2 .getmodelo() + \cf5 "\\nTipo do Guid\f2\'e3o: "\cf2\f1  + \cf4 bike1\cf2 .getGuidao());\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Cadastre o veiculo primeiro!"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  3:\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 1) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "O carro consegue se locomover "\cf2  + \cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf5 "\\nO carro consegue freiar "\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 2) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "A moto consegue se locomover "\cf2  + \cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf5 "\\nA moto consegue freiar "\cf2  + \cf5 "\\nA moto consegue empinar"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0  (\cf4 Option2\cf2  == 3) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "A bike consegue se locomover "\cf2  + \cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf5 "\\nA bike consegue freiar "\cf2  + \cf5 "\\nA bike consegue empinar"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Cadastre o veiculo primeiro!"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b case\cf2\b0  0:\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "At\f2\'e9!"\cf2\f1 );\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b default\cf2\b0 :\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 , \cf5 "Op\f2\'e7\'e3o Invalida!"\cf2\f1 );\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\} \cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b while\cf2\b0  (\cf4 Option\cf2 !=0);\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getcor() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 cor\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setcor(String \cf4 cor\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 cor\cf2  = \cf4 cor\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getmodelo() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 modelo\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setmodelo(String \cf4 modelo\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 modelo\cf2  = \cf4 modelo\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\f0\fs22 //-----------------------------------------------------------------------------------------//\f1\fs20\par
+\b\i\f0\fs22\lang1046 Carro.java\b0\i0\f2\fs20 )\par
+\cf1\b\f1 public\cf2\b0  \cf1\b class\cf2\b0  Carro \cf1\b extends\cf2\b0  \highlight6 Principal\highlight0  \{\cf0\par
+\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 aroRoda\cf2 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 Aerofolio\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab Carro() \{\cf0\par
+\cf2\tab\tab\cf1\ul\b this\cf2\b0 .\cf3 aroRoda\cf2  = \cf3 aroRoda\cf2\ulnone ;\cf0\par
+\cf2\tab\tab\cf1\ul\b this\cf2\b0 .\cf3 Aerofolio\cf2  = \cf3 Aerofolio\cf2\ulnone ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getaroRoda() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 aroRoda\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setaroRoda(String \cf4 aroRoda\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 aroRoda\cf2  = \cf4 aroRoda\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getAerofolio() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 Aerofolio\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setAerofolio(String \cf4 Aerofolio\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 Aerofolio\cf2  = \cf4 Aerofolio\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\f0\fs22\lang22 //-----------------------------------------------------------------------------------------//\par
+\b\i Moto.java\b0\i0 )\par
+\cf1\b\f1\fs20 public\cf2\b0  \cf1\b class\cf2\b0  Moto \cf1\b extends\cf2\b0  Principal \{\cf0\par
+\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 barraSeguran\f2\'e7a\cf2\f1 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 empinar\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab Moto() \{\cf0\par
+\cf2\tab\tab\cf1\ul\b this\cf2\b0 .\cf3 barraSeguran\f2\'e7a\cf2\f1  = \cf3 barraSeguran\f2\'e7a\cf2\ulnone\f1 ;\cf0\par
+\cf2\tab\tab\cf1\ul\b this\cf2\b0 .\cf3 empinar\cf2  = \cf3 empinar\cf2\ulnone ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getbarraSeguran\f2\'e7a() \{\cf0\f1\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 barraSeguran\f2\'e7a\cf2\f1 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  \highlight6 setbarraSegura\f2\'e7a\highlight0\f1 (String \cf4 barraSeguran\f2\'e7a\cf2\f1 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 barraSeguran\f2\'e7a\cf2\f1  = \cf4 barraSeguran\f2\'e7a\cf2\f1 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getempinar() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 empinar\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setempinar(String \cf4 empinar\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 empinar\cf2  = \cf4 empinar\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\f0\fs22 //-----------------------------------------------------------------------------------------//\par
+\b\i Bike.java\b0\i0 )\par
+\cf1\b\f1\fs20 public\cf2\b0  \cf1\b class\cf2\b0  Bike \cf1\b extends\cf2\b0  \highlight6 Principal\highlight0  \{\cf0\par
+\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 Guidao\cf2 ;\cf0\par
+\cf2\tab\cf1\b private\cf2\b0  String \cf3 empinar\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab Bike() \{\cf0\par
+\cf2\tab\tab\cf1\ul\b this\cf2\b0 .\cf3 Guidao\cf2  = \cf3 Guidao\cf2\ulnone ;\cf0\par
+\cf2\tab\tab\cf1\ul\b this\cf2\b0 .\cf3 empinar\cf2  = \cf3 empinar\cf2\ulnone ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getGuidao() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 Guidao\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setGuidao(String \cf4 Guidao\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 Guidao\cf2  = \cf4 Guidao\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getempinar() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 empinar\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setempinar(String \cf4 empinar\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 empinar\cf2  = \cf4 empinar\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\f0\fs22\par
+\par
+}
+ 

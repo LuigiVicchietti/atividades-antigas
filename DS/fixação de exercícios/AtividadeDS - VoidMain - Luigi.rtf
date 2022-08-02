@@ -1,0 +1,218 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Verdana;}{\f1\fnil Verdana;}{\f2\fnil Consolas;}{\f3\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red42\green0\blue255;\red106\green62\blue62;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\f0\fs24\lang22\par
+\par
+\b\fs28 ETEC DE GUAIANAZES\par
+\par
+\par
+\par
+\par
+Desenvolvimento de Sistemas\par
+Exercic\'edos M\'e9todos e Atributos\par
+\par
+\par
+\b0\par
+
+\pard\sa200\sl276\slmult1\qr\fs20 Esta atividade est\'e1 sendo feita\par
+no dia 12 de abril de 2021.\par
+Esta atividade est\'e1 sendo enviada\par
+para o professor Carlos e professora \par
+Rosangela para o primeiro bimestre.\par
+\par
+\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs28 S\'e3o Paulo\b0\par
+\fs22 Dia 25 de mar\'e7o de 2021\par
+\par
+\par
+\par
+\par
+\b\fs28 Exercicios:\par
+
+\pard\sa200\sl276\slmult1\b0\fs22 Elaborar um programa com 4 atributos e 3 m\'e9todos ( void ) para os seguintes objetos. Criar Projetos Separados . Exemplo ( Projeto Cachorro -> classe Cachorro e RodarCachorro ) outro Projeto ( Passarinho \f1\endash  classe Passarinho e RodarPassarinho).\par
+
+\pard\sa200\sl276\slmult1\qc\fs24\par
+
+\pard\sa200\sl276\slmult1 a) Passarinho\f0\lang1046 :\f1\lang22\par
+\f0\lang1046 ~\fs20 Passarinho:\par
+\cf1\b\f2 import\cf2\b0  javax.swing.JOptionPane;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Passarinho \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab String \cf3 nome\cf2 ;\cf0\par
+\cf2\tab String \cf3 cor\cf2 ;\cf0\par
+\cf2\tab String \cf3 ra\f3\'e7a\cf2\f2 ;\cf0\par
+\cf2\tab\cf1\b double\cf2\b0  \cf3 pre\f3\'e7o\cf2\f2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  PedirInfo() \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf3 nome\cf2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual o nome do passarinho? "\cf2 );\cf0\par
+\cf2\tab\tab\cf3 cor\cf2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual a cor do passarinho? "\cf2 );\cf0\par
+\cf2\tab\tab\cf3 ra\f3\'e7a\cf2\f2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual a ra\f3\'e7a do passarinho? "\cf2\f2 );\cf0\par
+\cf2\tab\tab\cf3 pre\f3\'e7o\cf2\f2 = Double.\i parseDouble\i0 (JOptionPane.\i showInputDialog\i0 (\cf4 "Qual o pre\f3\'e7o do passarinho? "\cf2\f2 ));\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Cantar() \{\cf0\par
+\cf2\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf4 "O passarinho cantou o dia todo no quintal... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Voar() \{\cf0\par
+\cf2\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf4 "O passarinho voou o dia inteiro... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Comer() \{\cf0\par
+\cf2\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf4 "O Passarinho estava faminto... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  ExibirInfo() \{\cf0\par
+\cf2\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf4 "Qual o nome do passarinho: "\cf2  + \cf3 nome\cf2  +\cf0\par
+\cf2\tab                                 \cf4 ". A Cor do passarinho: "\cf2  + \cf3 cor\cf2  + \cf0\par
+\cf2\tab\tab\tab\tab                     \cf4 ". A Ra\f3\'e7a do passarinho: "\cf2\f2  + \cf3 ra\f3\'e7a\cf2\f2  + \cf0\par
+\cf2\tab\tab\tab\tab                     \cf4 ". O Pre\f3\'e7o do passarinho: "\cf2\f2  + \cf3 pre\f3\'e7o\cf2\f2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\cf1\b\par
+\cf0\b0\par
+\f0\fs24 ~\fs20 PassarinhoRodar:\par
+\cf1\b\f2 public\cf2\b0  \cf1\b class\cf2\b0  PassarinhoRodar \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 ) \{\cf0\par
+\par
+\cf2\tab Passarinho \cf5 passarinho1\cf2 = \cf1\b new\cf2\b0  Passarinho();\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf5 passarinho1\cf2 .PedirInfo();\cf0\par
+\cf2\tab\cf5 passarinho1\cf2 .\highlight6 Voar\highlight0 ();\cf0\par
+\cf2\tab\cf5 passarinho1\cf2 .Cantar();\cf0\par
+\cf2\tab\cf5 passarinho1\cf2 .Comer();\cf0\par
+\cf2\tab\cf5 passarinho1\cf2 .ExibirInfo();\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\f1\fs24\lang22\par
+\par
+b) Bola\f0\lang1046 :\f1\lang22\par
+\f0\lang1046 ~\fs20 Bola:\par
+\cf1\b\f2 import\cf2\b0  javax.swing.JOptionPane;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Bola \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab String \cf3 marca\cf2 ;\cf0\par
+\cf2\tab String \cf3 cor\cf2 ;\cf0\par
+\cf2\tab String \cf3 tamanho\cf2 ;\cf0\par
+\cf2\tab\cf1\b double\cf2\b0  \cf3 pre\f3\'e7o\cf2\f2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  PedirInfo() \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf3 marca\cf2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual a marca da bola? "\cf2 );\cf0\par
+\cf2\tab\tab\cf3 cor\cf2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual a cor da bola? "\cf2 );\cf0\par
+\cf2\tab\tab\cf3 tamanho\cf2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual o tamanho da bola? "\cf2 );\cf0\par
+\cf2\tab\tab\cf3 pre\f3\'e7o\cf2\f2 = Double.\i parseDouble\i0 (JOptionPane.\i showInputDialog\i0 (\cf4 "Qual o pre\f3\'e7o da bola? "\cf2\f2 ));\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Kikar() \{\cf0\par
+\cf2\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf4 "A bola kika bem alto... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Rolar() \{\cf0\par
+\cf2\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf4 "A bola rolou muito nas partidas de futebol... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Murchar() \{\cf0\par
+\cf2\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf4 "Depois de dia inteiro a bola muchou... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  ExibirInfo() \{\cf0\par
+\cf2\tab\tab JOptionPane.\i showMessageDialog\i0 (\cf1\b null\cf2\b0 ,\cf4 "Qual a marca da bola: "\cf2  + \cf3 marca\cf2  +\cf0\par
+\cf2\tab                                 \cf4 ". A Cor da bola: "\cf2  + \cf3 cor\cf2  + \cf0\par
+\cf2\tab\tab\tab\tab                     \cf4 ". O Tamanho da bola: "\cf2  + \cf3 tamanho\cf2  + \cf0\par
+\cf2\tab\tab\tab\tab                     \cf4 ". O Pre\f3\'e7o da bola: "\cf2\f2  + \cf3 pre\f3\'e7o\cf2\f2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\par
+~BolaRodar: \par
+\cf1\b\f2 public\cf2\b0  \cf1\b class\cf2\b0  BolaRodar \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 ) \{\cf0\par
+\par
+\cf2\tab Bola  \cf5 bola1\cf2 = \cf1\b new\cf2\b0  Bola();\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf5 bola1\cf2 .PedirInfo();\cf0\par
+\cf2\tab\cf5 bola1\cf2 .Kika\f3 r\f2 ();\cf0\par
+\cf2\tab\cf5 bola1\cf2 .\highlight6 Rola\f3 r\highlight0\f2 ();\cf0\par
+\cf2\tab\cf5 bola1\cf2 .Mu\f3 r\f2 cha\f3 r\f2 ();\cf0\par
+\cf2\tab\cf5 bola1\cf2 .ExibirInfo();\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\f0\par
+\f1\fs24\lang22\par
+c) Cachorro\f0\lang1046 :\par
+~\fs20 Cachorro:\par
+\cf1\b\f2 import\cf2\b0  javax.swing.JOptionPane;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Cachorro \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab String \cf3 nome\cf2 ;\cf0\par
+\cf2\tab String \cf3 cor\cf2 ;\cf0\par
+\cf2\tab String \cf3 ra\f3\'e7a\cf2\f2 ;\cf0\par
+\cf2\tab\cf1\b double\cf2\b0  \cf3 pre\f3\'e7o\cf2\f2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  PedirInfo() \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf3 nome\cf2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual o nome do cachorro? "\cf2 );\cf0\par
+\cf2\tab\tab\cf3 cor\cf2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual a cor do cachorro? "\cf2 );\cf0\par
+\cf2\tab\tab\cf3 ra\f3\'e7a\cf2\f2 = JOptionPane.\i showInputDialog\i0 (\cf4 "Qual a ra\f3\'e7a do cachorro? "\cf2\f2 );\cf0\par
+\cf2\tab\tab\cf3 pre\f3\'e7o\cf2\f2 = Double.\i parseDouble\i0 (JOptionPane.\i showInputDialog\i0 (\cf4 "Qual o pre\f3\'e7o do cachorro? "\cf2\f2 ));\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Latir() \{\cf0\par
+\cf2\tab\tab JOptionPane.\highlight6\i showMessageDialog\highlight0\i0 (\cf1\b null\cf2\b0 ,\cf4 "O cachorro latiu bem alto... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Correr() \{\cf0\par
+\cf2\tab\tab JOptionPane.\highlight6\i showMessageDialog\highlight0\i0 (\cf1\b null\cf2\b0 ,\cf4 "O cachorro estava correndo no parque... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Pular() \{\cf0\par
+\cf2\tab\tab JOptionPane.\highlight6\i showMessageDialog\highlight0\i0 (\cf1\b null\cf2\b0 ,\cf4 "O cachorro pulo\f3 u\f2  o dia inteiro... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  Comer() \{\cf0\par
+\cf2\tab\tab JOptionPane.\highlight6\i showMessageDialog\highlight0\i0 (\cf1\b null\cf2\b0 ,\cf4 "O cachorro comeu quando voltou do parque... "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  ExibirInfo() \{\cf0\par
+\cf2\tab\tab JOptionPane.\highlight6\i showMessageDialog\highlight0\i0 (\cf1\b null\cf2\b0 ,\cf4 "Qual o nome do cachorro: "\cf2  + \cf3 nome\cf2  +\cf0\par
+\cf2\tab                                 \cf4 "\f3 .\f2  A Cor do cachorro: "\cf2  + \cf3 cor\cf2  + \cf0\par
+\cf2\tab\tab\tab\tab                     \cf4 "\f3 .\f2  A Ra\f3\'e7a do cachorro: "\cf2\f2  + \cf3 ra\f3\'e7a\cf2\f2  + \cf0\par
+\cf2\tab\tab\tab\tab                     \cf4 "\f3 .\f2  O Pre\f3\'e7o do cachorro: "\cf2\f2  + \cf3 pre\f3\'e7o\cf2\f2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\par
+\par
+~CachorroRodar:\par
+\cf1\b\f2 public\cf2\b0  \cf1\b class\cf2\b0  CachorroRodar \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 ) \{\cf0\par
+\par
+\cf2\tab Cachorro  \cf5 cachorro1\cf2 = \cf1\b new\cf2\b0  Cachorro();\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf5 cachorro1\cf2 .PedirInfo();\cf0\par
+\cf2\tab\cf5 cachorro1\cf2 .Latir();\cf0\par
+\cf2\tab\cf5 cachorro1\cf2 .Correr();\cf0\par
+\cf2\tab\cf5 cachorro1\cf2 .Pular();\cf0\par
+\cf2\tab\cf5 cachorro1\cf2 .Comer();\cf0\par
+\cf2\tab\cf5 cachorro1\cf2 .ExibirInfo();\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\f0\lang22\par
+}
+ 
